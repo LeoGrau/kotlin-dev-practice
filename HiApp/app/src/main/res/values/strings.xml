@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HiApp</string>
+    <string name="tvt_name">Your name</string>
+    <string name="ett_name">Name</string>
+    <string name="btn_t_say_hi">Say hi</string>
+    <string name="btn_t_back">Back</string>
+</resources>

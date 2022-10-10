@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvYourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvt_name"
+        android:translationY="-34dp"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/etYourName"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/ett_name"
+        android:autofillHints="@string/ett_name"
+        android:inputType="text" />
+    <Button
+        android:id="@+id/btnSayHi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_t_say_hi"
+        android:layout_gravity="bottom|center_horizontal"
+        android:translationY="-24dp"
+        />
+
+</FrameLayout>
