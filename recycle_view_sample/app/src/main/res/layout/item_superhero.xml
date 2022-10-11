@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/ivSuperHero"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:background="@drawable/ic_launcher_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/superhero_image_description" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/ivSuperHero"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:id="@+id/tvSuperHero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text = "Superhero"
+            />
+        <TextView
+            android:id="@+id/tvRealName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text = "Real Name"
+            />
+        <TextView
+            android:id="@+id/tvPublisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text = "Publisher"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
