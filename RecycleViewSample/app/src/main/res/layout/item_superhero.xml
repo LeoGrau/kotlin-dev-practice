@@ -28,6 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text = "Superhero"
+            android:textStyle="bold"
+            android:textSize="20sp"
             />
         <TextView
             android:id="@+id/tvRealName"
@@ -40,6 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text = "Publisher"
+            android:textColor="@color/gray"
             />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
