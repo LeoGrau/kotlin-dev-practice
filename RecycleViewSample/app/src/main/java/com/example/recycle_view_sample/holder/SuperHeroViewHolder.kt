@@ -1,10 +1,12 @@
 package com.example.recycle_view_sample.holder
 
 import android.annotation.SuppressLint
+import android.content.DialogInterface.OnClickListener
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recycle_view_sample.R
 import com.example.recycle_view_sample.databinding.ItemSuperheroBinding
@@ -29,7 +31,7 @@ class SuperHeroViewHolder(view: View): RecyclerView.ViewHolder(view) {
         ivSuperHero = binding.ivSuperHero
     }
 
-    fun render(superHero: SuperHero) {
+    fun render(superHero: SuperHero, onClickListenerLambda: (SuperHero) -> Unit) {
         tvSuperHero.text = superHero.superHeroeName
         tvRealName.text = superHero.realName
         tvPublisher.text = superHero.publisher
@@ -39,6 +41,17 @@ class SuperHeroViewHolder(view: View): RecyclerView.ViewHolder(view) {
             .build()
             .load(imageUrl)
             .into(ivSuperHero)
+
+            itemView.setOnClickListener { onClickListenerLambda(superHero) }
+
+//        //ImageView SuperHero
+//        ivSuperHero.setOnClickListener {
+//            Toast.makeText(itemView.context, superHero.superHeroeName, Toast.LENGTH_LONG).show()
+//        }
+//        //All item
+//        itemView.setOnClickListener {
+//            Toast.makeText(itemView.context, superHero.realName, Toast.LENGTH_LONG).show()
+//        }
 
     }
 }

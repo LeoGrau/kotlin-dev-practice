@@ -9,7 +9,7 @@ import com.example.recycle_view_sample.model.SuperHero
 
 //Esta clase se encarga de adaptar los datos de un provider al recycler view. Es decir, poner la informacion en el recycler view
 
-class SuperHeroAdapter(private val superheroes: List<SuperHero>): RecyclerView.Adapter<SuperHeroViewHolder>() {
+class SuperHeroAdapter(private val superheroes: List<SuperHero>, private val onClickListenerLambda: (SuperHero) -> Unit): RecyclerView.Adapter<SuperHeroViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SuperHeroViewHolder { //Lo que esta funcion hara es devolver el item que creamos (item_superhero) por cada objeto que haya de superheroe
         val layoutInflater = LayoutInflater.from(parent.context)
         return SuperHeroViewHolder(layoutInflater.inflate(R.layout.item_superhero, parent, false)) //inflate devuelve un tipo View. Por eso, en el ViewHolder
@@ -18,8 +18,8 @@ class SuperHeroAdapter(private val superheroes: List<SuperHero>): RecyclerView.A
 
     override fun onBindViewHolder(holder: SuperHeroViewHolder, position: Int) { //Va a pasar por cada uno de los items y va a llamar al superheroe render para pasarle los datos
         val item = superheroes[position]
-        holder.render(item)
+        holder.render(item, onClickListenerLambda)
     }
 
-    override fun getItemCount(): Int = superheroes.size
+    override fun getItemCount(): Int = superheroes.size //Creo que aqui hace el reconocimiento de que superheroes es el listado a usar.
 }
