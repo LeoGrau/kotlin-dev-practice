@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ViewBindingSample</string>
+    <string name="see_fragment_text">See Fragment</string>
+    <string name="see_activity_text">See Activity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="any_text_btn">Any</string>
+</resources>
