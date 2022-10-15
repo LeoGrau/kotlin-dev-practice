@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.example.viewbindingsample.app-mergeDebugResources-28:/layout/fragment_any.xml",
+        "source": "com.example.viewbindingsample.app-main-31:/layout/fragment_any.xml"
+    },
+    {
+        "merged": "C:\\Users\\Leonardo-Workstation\\.gradle\\daemon\\7.4\\com.example.viewbindingsample.app-mergeDebugResources-28:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Leonardo-Workstation\\.gradle\\daemon\\7.4\\com.example.viewbindingsample.app-main-31:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.viewbindingsample.app-mergeDebugResources-28:/layout/activity_main.xml",
+        "source": "com.example.viewbindingsample.app-main-31:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Leonardo-Workstation\\.gradle\\daemon\\7.4\\com.example.viewbindingsample.app-mergeDebugResources-28:\\layout\\superhero_item.xml",
+        "source": "C:\\Users\\Leonardo-Workstation\\.gradle\\daemon\\7.4\\com.example.viewbindingsample.app-main-31:\\layout\\superhero_item.xml"
+    }
+]
