@@ -16,6 +16,7 @@ class DogAdapter(private val DogList: List<Dog>): RecyclerView.Adapter<DogViewHo
 
     override fun onBindViewHolder(holder: DogViewHolder, position: Int) {
         val dogItem: Dog = DogList[position]
+        holder.renderItem(dogItem)
     }
 
     override fun getItemCount(): Int = DogList.size

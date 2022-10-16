@@ -2,4 +2,5 @@
     <string name="app_name">RetrofitApiConsume</string>
     <string name="dog_picture_description">Dog picture</string>
     <string name="puppy_picture">Puppy picture</string>
+    <string name="puppies_title">Puppies</string>
 </resources>
