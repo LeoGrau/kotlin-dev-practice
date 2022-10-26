@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SharedPreferences</string>
+    <string name="et_name_text">Name</string>
+    <string name="et_are_you_vip_text">Are you VIP?</string>
+    <string name="btn_confirm_text">Confirm</string>
+    <string name="welcome_text">Hi %1$s</string>
+    <string name="btn_sign_out_text">Sign Out</string>
+</resources>
