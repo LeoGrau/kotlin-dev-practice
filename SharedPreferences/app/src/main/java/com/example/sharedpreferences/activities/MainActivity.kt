@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
     fun accessToDetail() {
         if (etName.text.toString().isNotEmpty()) {
-            prefs.saveName("Leonardo")
+            prefs.saveName(etName.text.toString())
             prefs.saveVIP(cbVip.isChecked)
             goToDetail()
         } else {
